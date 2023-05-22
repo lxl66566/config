@@ -1,10 +1,8 @@
-function backup_config --description 'backup my config files here'
-	cd ~/myconfig
-	cp -rfu ~/.config .
-	cp -fu /etc/nginx/nginx.conf .
-	cp -fu /etc/ssh/sshd_config .
-	cp -fu /etc/hosts.deny .
-	git add .
-	git commit -m (date "+%Y%m%d-%H:%M:%S")
-	git push origin vps
+function backup_config --description 'backup my config on my ArchWSL'
+cd ~/myconfig
+cp -rfu ~/.config .
+git add .
+git commit -m (date "+%Y%m%d-%H:%M:%S")
+git status
+git push origin archwsl
 end
