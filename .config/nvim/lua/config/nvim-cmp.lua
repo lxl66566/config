@@ -18,6 +18,7 @@ cmp.setup({
         -- Use <C-b/f> to scroll the docs
         ['<C-b>'] = cmp.mapping.scroll_docs( -4),
         ['<C-f>'] = cmp.mapping.scroll_docs(4),
+        ['<C-x>'] = cmp.mapping.abort(),
         -- Use <C-k/j> to switch in items
         ['<C-k>'] = cmp.mapping.select_prev_item(),
         ['<C-j>'] = cmp.mapping.select_next_item(),
@@ -77,5 +78,4 @@ cmp.setup({
     { name = 'path' },        -- For path completion
   })
 })
-
 

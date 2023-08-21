@@ -34,6 +34,7 @@ vim.cmd([[
 return require('packer').startup(function(use)
         -- Packer can manage itself
         use 'wbthomason/packer.nvim'
+
         ---------------------------------------
         -- NOTE: PUT YOUR THIRD PLUGIN HERE --
         ---------------------------------------
@@ -46,6 +47,10 @@ return require('packer').startup(function(use)
         use { 'hrsh7th/cmp-cmdline', after = 'nvim-cmp' } -- cmdline auto-completion
         use 'L3MON4D3/LuaSnip'
         use 'saadparwaiz1/cmp_luasnip'
+        use { 'williamboman/mason.nvim' }
+        use { 'williamboman/mason-lspconfig.nvim'}
+
+
 
         -- Automatically set up your configuration after cloning packer.nvim
         -- Put this at the end after all plugins

@@ -1,9 +1,11 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export HOST_IP:172\x2e25\x2e96\x2e1
-SETUVAR --export HOST_PORT:10450
-SETUVAR --export VPS_IP:192\x2e210\x2e196\x2e247
+SETUVAR --export ALL_PROXY:http\x3a//127\x2e0\x2e0\x2e1\x3a20172
+SETUVAR --export EDITOR:nvim
+SETUVAR --export HTTPS_PROXY:http\x3a//127\x2e0\x2e0\x2e1\x3a20172
+SETUVAR --export HTTP_PROXY:http\x3a//127\x2e0\x2e0\x2e1\x3a20172
 SETUVAR __fish_initialized:3400
+SETUVAR all_proxy:http\x3a//127\x2e0\x2e0\x2e1\x3a20172
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:blue
@@ -32,3 +34,5 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR http_proxy:http\x3a//127\x2e0\x2e0\x2e1\x3a20172
+SETUVAR https_proxy:http\x3a//127\x2e0\x2e0\x2e1\x3a20172
