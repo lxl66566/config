@@ -49,7 +49,30 @@ return require('packer').startup(function(use)
         use 'saadparwaiz1/cmp_luasnip'
         use { 'williamboman/mason.nvim' }
         use { 'williamboman/mason-lspconfig.nvim'}
+--         use 'preservim/nerdtree'
+        use {
+          "nvim-neo-tree/neo-tree.nvim",
+            branch = "v3.x",
+            requires = { 
+              "nvim-lua/plenary.nvim",
+              "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+              "MunifTanjim/nui.nvim",
+            }
+          }
 
+
+--        use "willthbill/opener.nvim"
+--        use {
+--          'nvim-telescope/telescope.nvim', tag = '0.1.2',
+--        -- or                            , branch = '0.1.x',
+--          requires = { {'nvim-lua/plenary.nvim'} }
+--        }
+--        use {
+--          'nvim-tree/nvim-tree.lua',
+--          requires = {
+--            'nvim-tree/nvim-web-devicons', -- optional
+--          },
+--        }
 
 
         -- Automatically set up your configuration after cloning packer.nvim
