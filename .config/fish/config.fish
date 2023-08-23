@@ -3,3 +3,10 @@ if status is-interactive
     # bind \t accept-autosuggestion
     bind \t forward-word
 end
+
+# pnpm
+set -gx PNPM_HOME "/home/absolutex/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
