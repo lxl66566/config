@@ -58,7 +58,8 @@ return require('packer').startup(function(use)
               "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
               "MunifTanjim/nui.nvim",
             }
-          }
+        }
+        use { 'ActivityWatch/aw-watcher-vim' }
 
 
 --        use "willthbill/opener.nvim"

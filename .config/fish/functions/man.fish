@@ -2,7 +2,7 @@ function man --description 'add tldr selection'
     read -n 1 -P 'Use tldr instead of man? (y/n) ' answer
     switch $answer
         case n N
-            man $argv
+            /usr/bin/man $argv
         case '*'
             tldr $argv
     end
