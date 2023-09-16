@@ -3,6 +3,8 @@ cp -rfu ~/.config/mpv .config/
 cp -rfu ~/.config/nvim .config/
 cp -rfu ~/.config/fish .config/
 cp -rfu ~/.config/fcitx5 .config/
+cp -rfu ~/.config/plasma* .config/
+cp -rfu ~/.config/k* .config/
 cp -rfu ~/.npmrc .
 cp -rfu /etc/pacman.conf etc
 cp -rfu /etc/fstab etc

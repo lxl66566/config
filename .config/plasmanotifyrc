@@ -1,0 +1,8 @@
+[Applications][org.telegram.desktop]
+Seen=true
+
+[Applications][qq]
+Seen=true
+
+[Notifications]
+PopupTimeout=3000

@@ -7,11 +7,16 @@ options: -c: connect to proxy
   else
     switch "$argv[1]"
       case '-c'
-        nohup v2raya --lite > /dev/null &
+        systemctl --user enable --now v2raya-lite
+        set -Ux all_proxy http://127.0.0.1:20171
       case '-d'
-        pgrep v2raya | xargs kill -9
+        systemctl --user disable --now v2raya-lite
+        set -Ux all_proxy http://127.0.0.1:12345
       case '*'
         echo $usage
     end
+    set -Ux ALL_PROXY $all_proxy
+    set -Ux HTTP_PROXY $all_proxy
+    set -Ux HTTPS_PROXY $all_proxy
   end
 end
