@@ -1,8 +1,10 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export EDITOR:nvim
+SETUVAR --export HOST_IP:172\x2e25\x2e96\x2e1
+SETUVAR --export HOST_PORT:10450
+SETUVAR --export VPS_IP:192\x2e210\x2e196\x2e247
 SETUVAR __fish_initialized:3400
-SETUVAR --export all_proxy:http\x3a//127\x2e0\x2e0\x2e1\x3a12345
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:blue
