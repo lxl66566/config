@@ -6,6 +6,7 @@ case ${answer:0:1} in
         git remote add origin git@github.com:lxl66566/config.git
         git add -A
         git commit -m "clean git"
+        git branch -M archlinux
         git push origin main -f &
         wait
         exec /bin/bash
