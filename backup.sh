@@ -6,12 +6,13 @@ cp -rfu ~/.config/nvim .config/
 cp -rfu ~/.config/fish .config/
 cp -rfu ~/.config/fcitx5 .config/
 cp -rfu ~/.npmrc .
-find /etc -name "fstab" \
-          -name "updatedb.conf" \
-          -name "mkinitcpio.conf" \
-          -name "pacman.conf" \
-          -name "environment" \
-          -exec cp -fu {} etc \;
+
+cp -fu /etc/pacman.conf etc
+cp -fu /etc/fstab etc
+cp -fu /etc/updatedb.conf etc
+cp -fu /etc/mkinitcpio.conf etc
+cp -fu /etc/environment etc
+
 wait
 git add .
 git status
