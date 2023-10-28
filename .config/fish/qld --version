@@ -1,0 +1,22 @@
+[0;1;31m×[0m mysqld.service - MySQL Server
+     Loaded: loaded (]8;;file://absx/usr/lib/systemd/system/mysqld.service/usr/lib/systemd/system/mysqld.service]8;;; [0;1;38;5;185mdisabled[0m; preset: [0;1;38;5;185mdisabled[0m)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Sat 2023-10-21 10:19:21 CST; 2min 46s ago
+       Docs: ]8;;man:mysqld(8)man:mysqld(8)]8;;
+             ]8;;http://dev.mysql.com/doc/refman/en/using-systemd.htmlhttp://dev.mysql.com/doc/refman/en/using-systemd.html]8;;
+    Process: 21685 ExecStartPre=/usr/bin/mysqld_pre_systemd (code=exited, status=0/SUCCESS)
+    Process: 21754 ExecStart=/usr/bin/mysqld $MYSQLD_OPTS [0;1;31m(code=exited, status=1/FAILURE)[0m
+   Main PID: 21754 (code=exited, status=1/FAILURE)
+     Status: "[0;1;36mServer shutdown complete[0m"
+      Error: 22 (无效的参数)
+        CPU: 1.489s
+
+Oct 21 10:19:20 absx mysqld[21754]: 2023-10-21T02:19:20.188354Z 0 [ERROR] [MY-013129] [Server] A message intended for a client cannot be sent there as no client-session is attached. Therefore, we're sending the information to the error-log instead: MY-001146 - Table 'mysql.component' doesn't exist
+Oct 21 10:19:20 absx mysqld[21754]: 2023-10-21T02:19:20.188397Z 0 [Warning] [MY-013129] [Server] A message intended for a client cannot be sent there as no client-session is attached. Therefore, we're sending the information to the error-log instead: MY-003543 - The mysql.component table is missing or has an incorrect definition.
+Oct 21 10:19:20 absx mysqld[21754]: 2023-10-21T02:19:20.188812Z 0 [ERROR] [MY-010326] [Server] Fatal error: Can't open and lock privilege tables: Table 'mysql.user' doesn't exist
+Oct 21 10:19:20 absx mysqld[21754]: 2023-10-21T02:19:20.188848Z 0 [ERROR] [MY-010952] [Server] The privilege system failed to initialize correctly. For complete instructions on how to upgrade MySQL to a new version please see the 'Upgrading MySQL' section from the MySQL manual.
+Oct 21 10:19:20 absx mysqld[21754]: 2023-10-21T02:19:20.188956Z 0 [ERROR] [MY-010119] [Server] Aborting
+Oct 21 10:19:21 absx mysqld[21754]: 2023-10-21T02:19:21.646246Z 0 [System] [MY-010910] [Server] /usr/bin/mysqld: Shutdown complete (mysqld 8.0.34)  Source distribution.
+Oct 21 10:19:21 absx systemd[1]: [0;1;39m[0;1;31m[0;1;39mmysqld.service: Main process exited, code=exited, status=1/FAILURE[0m
+Oct 21 10:19:21 absx systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmysqld.service: Failed with result 'exit-code'.[0m
+Oct 21 10:19:21 absx systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start MySQL Server.[0m
+Oct 21 10:19:21 absx systemd[1]: mysqld.service: Consumed 1.489s CPU time.
