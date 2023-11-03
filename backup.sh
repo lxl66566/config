@@ -5,6 +5,7 @@ cp -rfu ~/.config/mpv .config/
 cp -rfu ~/.config/nvim .config/
 cp -rfu ~/.config/fish .config/
 cp -rfu ~/.config/fcitx5 .config/
+cp -rfu ~/.config/xsettingsd .config/
 cp -rfu ~/.npmrc .
 
 cp -fu /etc/pacman.conf etc
@@ -12,6 +13,7 @@ cp -fu /etc/fstab etc
 cp -fu /etc/updatedb.conf etc
 cp -fu /etc/mkinitcpio.conf etc
 cp -fu /etc/environment etc
+cp -rfu /etc/sysctl.d etc
 
 wait
 git add .
