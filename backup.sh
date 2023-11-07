@@ -13,6 +13,7 @@ cp -fu /etc/fstab etc
 cp -fu /etc/updatedb.conf etc
 cp -fu /etc/mkinitcpio.conf etc
 cp -fu /etc/environment etc
+cp -fu /etc/default/grub etc/default
 cp -rfu /etc/sysctl.d etc
 
 wait
