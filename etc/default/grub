@@ -3,7 +3,7 @@
 GRUB_DEFAULT=saved
 GRUB_TIMEOUT=10
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=5 nowatchdog psi=1"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=5 nowatchdog psi=1 zswap.enabled=0 nvidia_drm.modeset=1"
 GRUB_CMDLINE_LINUX=""
 GRUB_DISABLE_OS_PROBER=false
 

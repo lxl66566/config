@@ -15,6 +15,8 @@ cp -fu /etc/mkinitcpio.conf etc
 cp -fu /etc/environment etc
 cp -fu /etc/default/grub etc/default
 cp -rfu /etc/sysctl.d etc
+cp -rfu /etc/udev/rules.d etc/udev
+cp -rfu /etc/modprobe.d etc
 
 wait
 git add .
